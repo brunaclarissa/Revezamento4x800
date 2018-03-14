@@ -31,7 +31,7 @@ RSpec.describe UsersController, type: :controller do
         post :create, params: {user: valid_attributes}, session: valid_session
         expect(response).to have_http_status(:created)
          expect(response.content_type).to eq('application/json')
-        # expect(response.location).to eq(user_url(User.last))
+        expect(response.location).to eq(user_url(User.last))
         #expect(nil).to be_success
       end
     end
