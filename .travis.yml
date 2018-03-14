@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+        - 2.4.1
+
+
+         Script:
+                 - bin/rake db:create
+                 - bin/rake db:migrate
+                 - bin/rake
+        
