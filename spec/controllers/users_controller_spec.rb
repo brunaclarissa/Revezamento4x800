@@ -12,8 +12,8 @@ RSpec.describe UsersController, type: :controller do
     it "returns a success response" do
       user = User.create(name: "Orcestra", email: "projetos@orcestra.com.br")
       get :index, params: {}, session: valid_session
-      # expect(response).to be_success
-      expect(nil).to be_success
+       expect(response).to be_success
+#      expect(nil).to be_success
     end
   end
 
